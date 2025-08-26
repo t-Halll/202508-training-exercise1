@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+    <link rel="stylesheet" href="css/ImageList-style.css">
+</head>
+    <body>
+        <header class="mt-5">
+            <h1 style="margin-left: 10rem;">写真一覧</h1>
+        </header>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image2.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image3.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image4.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+            <div class="card">
+                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
+        </div>
+
+        <!-- ページネーション -->
+        <ul class="example">
+            <li><<</li>
+            <li><</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>></li>
+            <li>>></li>
+        </ul>
+
+        <!-- 一覧で選択された写真を拡大表示する -->
+        <script>
+            const ImagePickUp=() =>{
+                location.href="http://127.0.0.1:5500/Image2.html"
+            }
+        </script>
+
+    </body>
+</html>

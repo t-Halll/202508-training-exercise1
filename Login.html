@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+</head>
+<body>
+    <header style="text-align: center; margin-top: 5rem;">
+        <h1>アルバムアプリ</h1>
+    </header>
+    <br>
+
+    <!-- ログインフォーム -->
+    <form name="login_form" style="text-align: center;">
+        <div>
+            <label>ID
+                <input type="id" id="userID">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>PW
+                <input type="password" id="userPW">
+            </label>
+        </div>
+        <br>
+        <input type="button" onclick="Login()" value="ログイン">
+    </form>
+
+    <script>
+        const Login=() => {
+            if(
+                document.getElementById("userID").value=="TEST" &&
+                document.getElementById("userPW").value=="TEST"){
+                    location.href="http://127.0.0.1:5500/ImageList.html";
+            }else{
+                alert("※エラー　正しいIDとPWを入力してください")
+            }
+        }        
+    </script>
+</body>
+</html>

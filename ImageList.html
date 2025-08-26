@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <header class="mt-5">
+        <h1 style="margin-left: 15rem;">写真一覧</h1>
+    </header>
+
+    <!-- 読み込むJSONファイル -->
+    <script>
+        fetch("PhotoList.json")
+    </script>
+
+    <!-- 写真一覧の表示 -->
+    <div class="container" style="width: 100%; height: 80%;">
+        <div class="row">
+            <div class="col">
+                <div class="row g-0">
+                    <!-- 写真の表示 -->
+                    <div class="col-md-3">
+                        <div class="card no-rounded-card">
+                            <div class="card-body p-0">
+                                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card no-rounded-card">
+                            <div class="card-body p-0">
+                                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card no-rounded-card">
+                            <div class="card-body p-0">
+                                <img src="images/image3.jpeg" type="button" onclick="ImagePickUp()" alt="写真3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card no-rounded-card">
+                            <div class="card-body p-0">
+                                <img src="images/image2.jpeg" type="button" onclick="ImagePickUp()" alt="写真4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card no-rounded-card">
+                            <div class="card-body p-0">
+                                <img src="images/image3.jpeg" type="button" onclick="ImagePickUp()" alt="写真4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card no-rounded-card">
+                            <div class="card-body p-0">
+                                <img src="images/image3.jpeg" type="button" onclick="ImagePickUp()" alt="写真4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card no-rounded-card">
+                            <div class="card-body p-0">
+                                <img src="images/image3.jpeg" type="button" onclick="ImagePickUp()" alt="写真4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ページネーション -->
+    <script type="text/javascript" src="JS/pagination.js" charset="UTF-8"></script>
+    <ul class="example">
+        <li><<</li>
+        <li><</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>></li>
+        <li>>></li>
+    </ul>
+
+    <!-- 一覧で選択された写真を拡大表示する -->
+    <script>
+        const ImagePickUp=() =>{
+            location.href="http://127.0.0.1:5500/Photo.html"
+        }
+    </script>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+    <link rel="stylesheet" href="css/Image-style.css">
+</head>
+
+<!-- 選択された写真の表示 -->
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+        </div>
+
+    <!-- 写真一覧に戻るボタン -->
+    <button class="btn" onclick="BackPhotoList()">
+        一覧へ
+    </button>
+
+
+    <script>
+        const BackPhotoList=() =>{
+            location.href="http://127.0.0.1:5500/ImageList2.html"
+        }
+    </script>
+
+</body>
+</html>
