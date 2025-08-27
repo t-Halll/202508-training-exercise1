@@ -11,53 +11,32 @@
             <h1 style="margin-left: 10rem;">写真一覧</h1>
         </header>
 
-        <div class="card-container">
-            <div class="card">
-                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image2.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image3.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image4.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-            <div class="card">
-                <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
-            </div>
-        </div>
+        <!-- 写真一覧の表示 -->
+        <div class="button card-container" onclick="ImagePickUp()" id="image-container"></div>
 
         <!-- ページネーション -->
-        <ul class="example">
-            <li><<</li>
-            <li><</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>></li>
-            <li>>></li>
+        <ul class="pagination">
+            <li><a href="#">&lt;&lt;</a></li>
+            <li><a href="#">&lt;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">&gt;</a></li>
+            <li><a href="#">&gt;&gt;</a></li>
         </ul>
 
         <!-- 一覧で選択された写真を拡大表示する -->
         <script>
             const ImagePickUp=() =>{
-                location.href="http://127.0.0.1:5500/Image2.html"
+                location.href="http://127.0.0.1:5500/202508-training-exercise1/Image2.html"
             }
         </script>
+
+        <!-- JavaScriptファイルを読み込む -->
+        <script src="JS/image.js"></script>
 
     </body>
 </html>

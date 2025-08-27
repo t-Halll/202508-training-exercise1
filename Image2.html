@@ -9,20 +9,32 @@
 
 <!-- 選択された写真の表示 -->
 <body>
-    <div class="card-container">
-        <div class="card">
-            <img src="images/image1.jpeg" type="button" onclick="ImagePickUp()" alt="写真1">
+    <div class="container">
+        <!-- 前へボタン -->
+        <button class="arrow-button">
+            &lt;<br>前
+        </button>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="images/image1.jpeg" class="images" type="button" onclick="ImagePickUp()" alt="写真1">
+            </div>
         </div>
+
+        <!-- 次へボタン -->
+        <button class="arrow-button">
+            &gt;<br>次
+        </button>
+    </div>
 
     <!-- 写真一覧に戻るボタン -->
     <button class="btn" onclick="BackPhotoList()">
         一覧へ
     </button>
 
-
     <script>
         const BackPhotoList=() =>{
-            location.href="http://127.0.0.1:5500/ImageList2.html"
+            location.href="http://127.0.0.1:5500/202508-training-exercise1/ImageList2.html"
         }
     </script>
 

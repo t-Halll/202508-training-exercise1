@@ -29,11 +29,13 @@
     </form>
 
     <script>
+        const CorrectID = "TEST"
+        const CorrectPW = "TEST"
         const Login=() => {
             if(
-                document.getElementById("userID").value=="TEST" &&
-                document.getElementById("userPW").value=="TEST"){
-                    location.href="http://127.0.0.1:5500/ImageList.html";
+                document.getElementById("userID").value== CorrectID &&
+                document.getElementById("userPW").value== CorrectPW){
+                    location.href="http://127.0.0.1:5500/202508-training-exercise1/ImageList2.html";
             }else{
                 alert("※エラー　正しいIDとPWを入力してください")
             }

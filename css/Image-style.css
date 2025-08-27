@@ -1,16 +1,40 @@
-
+.container{
+    display: flex;
+    align-items: center; /* 縦方向の揃えを中央にする場合 */
+    gap: 10px; /* 画像とボタンの間に余白を入れる場合 */
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
 
 img {
     display: block;
-    width: 40%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #ccc;;
 }
 
 .btn {
+    background: none; /* ボタンの背景をなしにする */
+    border: none; /* ボタンの境界線をなしにする */
+    cursor: pointer; /* マウスカーソルをポインターにする */
     display: block;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 60%;
+    font-size: 20px;
 }
+
+.image-with-arrow {
+    display: flex; /* 要素を横並びにする */
+    align-items: center; /* 垂直方向の中央揃えにする */
+    gap: 10px; /* 画像とボタンの間の余白 */
+}
+
+.arrow-button {
+    background: none; /* ボタンの背景をなしにする */
+    border: none; /* ボタンの境界線をなしにする */
+    cursor: pointer; /* マウスカーソルをポインターにする */
+    font-size: 24px; /* 矢印のフォントサイズ */
+}
+
